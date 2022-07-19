@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index 2
+    </title>
+</head>
+<body>
+    <p>This page asks for two numbers, then calculates the first number to the power of the second number, and displays all three numbers on the page. With javascript!</p>
+    <p class="a"></p>
+    <p class="b"></p>
+    <p class="c"></p>
+    <script>
+        function askNum(message){
+            let answer = prompt(message,'');
+            return answer;
+        }
+
+        function pow(y,z){
+            return y**z;
+        }
+
+        let a = askNum("enter num")
+        let b = askNum("enter another num")
+        let c = pow(a,b);
+
+        document.querySelector(".a").textContent = ("First number: " + a);
+
+        document.querySelector(".b").innerText = "Second number: " + b;
+
+        document.querySelector(".c").innerText = a + " to the power of " + b + " = " + c;
+    </script>
+</body>
+</html>
