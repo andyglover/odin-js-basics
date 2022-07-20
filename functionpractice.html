@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index2</title>
+</head>
+<body>
+    <p><a href="./index.html">back to index.html</a></p>
+    <script>
+        function add7(x){
+            console.log(x + 7);
+        }
+        function multiply(x,y){
+            console.log(x*y);
+        }
+        function capitalize(x){
+            console.log(x.substring(0,1).toUpperCase() + x.substring(1).toLowerCase())
+            //
+        }
+        function lastLetter(x){
+            console.log(x.slice(-1))
+        }
+
+        capitalize("stackoverflow");
+        capitalize("STACKOVERFLOW");
+        capitalize("sTaCkOvErFlOw");
+        add7(5);
+        add7(7);
+        add7(9);
+        multiply(3,8);
+        multiply(9,9);
+        multiply(11,9);
+        lastLetter("atrnnaertsdfgsd");
+    </script>
+    
+</body>
+</html>
